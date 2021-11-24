@@ -40,3 +40,7 @@ a{
   color: white;
 }
 
+#user, #guest {
+  display: flex;
+}
+
