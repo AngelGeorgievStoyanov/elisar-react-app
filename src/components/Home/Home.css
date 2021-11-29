@@ -32,15 +32,16 @@ main{
     height: 250px;
     border-radius: 150px;
     position: absolute;
-    top: 28px;
-    left: 20px;
+    top: 52px;
+    left: 60px;
 }
-main > section > article.coafior > p > h1{
-    color: white;
+article.coafior > p > h1{
+    color: black;
     position: absolute;
-    top: 282px;
-    left: 16px;
+    top: 0px;
+    left: 68px;
 }
+
 
 #nails{
     filter: invert(1);
@@ -53,10 +54,10 @@ main > section > article.coafior > p > h1{
 }
 
 
-main > section > article.nails > p > h1{
-    color: white;
+article.nails > p > h1{
+    color: black;
     position: absolute;
-    top: 685px;
+    top: 391px;
     left: 283px;
 }
 

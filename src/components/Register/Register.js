@@ -1,12 +1,26 @@
+import './Register.css';
+import { Link } from 'react-router-dom';
+
 export default function Register() {
 
     return (
-        <div>
-            <h1>Register Page</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
+        <section className="loginForm">
+            <div id="login-box">
+                <div className="left-box">
+                    <h1>Register</h1>
+                    <form action="#" method="post">
+                        <input type="text" className="txtb" placeholder="Username" />
+                        <input type="text" className="txtb" placeholder="Email" />
+                        <input type="text" className="txtb" placeholder="Password" />
+                        <input type="text" className="txtb" placeholder="Confirm Password" />
+                        <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
+                    </form>
+                    <small class="text-muted "><Link to="/login">Already Have An Account?</Link></small>
+                </div>
+                <div className="right-box">
+                </div>
+            </div>
+        </section>
     )
 
 }
