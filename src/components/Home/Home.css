@@ -3,6 +3,10 @@
    
   }
 
+  body{
+      display: flex;
+  }
+
   section{
       margin: -22px;
   }

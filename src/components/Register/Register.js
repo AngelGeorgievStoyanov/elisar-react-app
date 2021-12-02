@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function Register() {
 
     return (
-        <section className="loginForm">
-            <div id="login-box">
+        <section className="register-form">
+            <div id="register-box">
                 <div className="left-box">
                     <h1>Register</h1>
                     <form action="#" method="post">
@@ -15,7 +15,7 @@ export default function Register() {
                         <input type="text" className="txtb" placeholder="Confirm Password" />
                         <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
                     </form>
-                    <small class="text-muted "><Link to="/login">Already Have An Account?</Link></small>
+                    <small className="text-muted "><Link to="/login">Already Have An Account?</Link></small>
                 </div>
                 <div className="right-box">
                 </div>

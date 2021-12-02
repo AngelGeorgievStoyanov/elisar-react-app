@@ -1,5 +1,7 @@
 
 
+
+
 body
 {
     box-sizing: border-box;
@@ -16,7 +18,7 @@ body
 
 
 
-#register-box
+#login-box
 {
     display: flex;
     flex-direction: column;
@@ -99,11 +101,4 @@ input[type="submit"]:focus
 }
 
 
-small a:hover
-{
-    text-decoration: none;
-}
 
-small>a{
-    color: #777;
-}

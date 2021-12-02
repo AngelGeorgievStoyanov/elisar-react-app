@@ -12,6 +12,7 @@ function Header() {
                 <img src={logo} id="logo" alt="Logo" />
                 <ul className="navBar">
                     <div id="user">
+                        <li>Welcome ${}</li>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/logout">Logout</Link></li>
                         <li><Link to="/contacts">Contacts</Link></li>
