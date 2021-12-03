@@ -1,12 +1,20 @@
-
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import './Login.css';
-import * as authService from '../../services/authService'
-export default function Login(e) {
+import * as authService from '../../services/authService';
+import { useContext } from 'react/cjs/react.development';
+import { AuthContext } from '../contexts/AuthContex';
+
+
+export default function Login() {
+const {login}=useContext(AuthContext);
+
+  const navigate = useNavigate();
 
   const onLoginHandler = (e) => {
 
-
     e.preventDefault()
+
     let formData = new FormData(e.currentTarget);
     let email = formData.get('email');
     console.log(email)
@@ -15,8 +23,10 @@ export default function Login(e) {
 
     authService.login(email, password)
       .then((authData) => {
+        login(authData)
         console.log('Logged')
         console.log(authData)
+        navigate('/')
       })
   }
   return (
@@ -27,9 +37,10 @@ export default function Login(e) {
           <h1>Login</h1>
           <form onSubmit={onLoginHandler} method="POST">
             <input type="text" className="txtb" name="email" placeholder="Email" />
-            <input type="text" className="txtb" name="password" placeholder="Confirm Password" />
+            <input type="text" className="txtb" name="password" placeholder="Password" />
             <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
           </form>
+          <small className="text-muted "><Link to="/register">Don't Have An Account? Sign up!</Link></small>
         </div>
         <div className="right-box">
         </div>
