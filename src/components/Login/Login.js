@@ -37,7 +37,7 @@ const {login}=useContext(AuthContext);
           <h1>Login</h1>
           <form onSubmit={onLoginHandler} method="POST">
             <input type="text" className="txtb" name="email" placeholder="Email" />
-            <input type="text" className="txtb" name="password" placeholder="Password" />
+            <input type="password" className="txtb" name="password" placeholder="Password" />
             <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
           </form>
           <small className="text-muted "><Link to="/register">Don't Have An Account? Sign up!</Link></small>

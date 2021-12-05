@@ -10,7 +10,7 @@ const useFetch = (url) => {
                
                 setState(response)
             })
-    }, [])
+    }, [url])
 
     return state
 }

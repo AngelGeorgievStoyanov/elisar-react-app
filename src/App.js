@@ -1,6 +1,5 @@
 
-import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useState } from 'react';
+import { Routes, Route} from 'react-router-dom'
 import useLocalStorage from './hooks/useLocalStorage';
 import { AuthContext } from './components/contexts/AuthContex';
 import Header from './components/Header/Header';
@@ -29,7 +28,6 @@ function App() {
 
   const login = (authData) => {
     setUser(authData)
-    console.log(authData, 'ttttttttttttttttttuuukkk')
   }
   const logout = () => {
     setUser(initialAuthState)

@@ -8,7 +8,7 @@ function SectionOne() {
 
     return (
         <section>
-            <img src={image[0]} width="100%" />
+            <img src={image[0]} width="100%" alt="hair" />
         </section>
     )
 }

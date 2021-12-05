@@ -11,8 +11,8 @@ export default function Register() {
                     <form action="#" method="post">
                         <input type="text" className="txtb" placeholder="Username" />
                         <input type="text" className="txtb" placeholder="Email" />
-                        <input type="text" className="txtb" placeholder="Password" />
-                        <input type="text" className="txtb" placeholder="Confirm Password" />
+                        <input type="password" className="txtb" placeholder="Password" />
+                        <input type="password" className="txtb" placeholder="Confirm Password" />
                         <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
                     </form>
                     <small className="text-muted "><Link to="/login">Already Have An Account?</Link></small>

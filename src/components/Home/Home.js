@@ -1,8 +1,7 @@
 import './Home.css';
-import SectionOne from './SectionOne/Section';
+import SectionOne from './SectionOne/SectionOne';
 import SectionTwo from './SectionTwo/SectionTwo';
 import SectionThree from './SectionThree/SectionThree';
-import useFetch from '../../hooks/useFetch';
 
 export default function Home() {
 
