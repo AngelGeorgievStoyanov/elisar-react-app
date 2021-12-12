@@ -1,21 +1,18 @@
-import './NotFound'
-
+import './NotFound.css';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 export default function NotFound() {
+const navigate = useNavigate()
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        navigate('/');
+        }, 3000);
+        return () => clearTimeout(timer);
+      }, [navigate]);
     return (
-        <section id="notfound">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <h1 activeStyle={{margin:'100px, 200px'}}>-----------Page Not Found!</h1>
-        </section>
+        <div id="notfound">
+           
+            <h1 >Page Not Found!</h1>
+        </div>
     )
 }

@@ -1,9 +1,9 @@
 
-import coafior from '../../../foto/IMG_7107.JPG';
-import nails from '../../../foto/IMG_7110.JPG';
 import { Link } from 'react-router-dom';
 
-import './SectionTwo.css'
+import './SectionTwo.css';
+const coafior = 'https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8449.jpg&t=Lx2q9pmrKVjjWAD&scalingup=0'
+const nails = 'https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8448.JPG&t=s2omgc0cN5MXwgq&scalingup=0'
 function SectionTwo() {
 
     return (

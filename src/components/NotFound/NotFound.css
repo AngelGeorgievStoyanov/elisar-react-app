@@ -1,4 +1,7 @@
-#notfound{
-    margin-top: 100px;
-    
+main> div#notfound{
+   
+   display: flex;
+   margin: 50% 50%;
+  
+        
 }

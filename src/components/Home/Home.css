@@ -3,14 +3,12 @@
    
   }
 
-  body{
+  main{
       display: flex;
+      flex-direction: column;
   }
 
-  section{
-      margin: -22px;
-  }
-  
+ 
 
 main{
    

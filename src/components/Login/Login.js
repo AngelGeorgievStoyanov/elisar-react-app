@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import './Login.css';
 import * as authService from '../../services/authService';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContex';
 
 

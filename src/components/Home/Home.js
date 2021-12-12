@@ -8,14 +8,14 @@ export default function Home() {
 
 
     return (
-        <div>
+        <>
             <SectionOne />
             <SectionTwo />
             <SectionThree/>
             <section></section>
             <section></section>
             <section></section>
-        </div>
+        </>
 
 
 
