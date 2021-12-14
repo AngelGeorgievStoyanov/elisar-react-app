@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import * as coafiorService from '../../services/coafiorService';
 
+import CoafiorList from './CoafiorList/CoafiorList';
 import './Coafior.css';
 
-import CoafiorList from './CoafiorList/CoafiorList';
 
 
 
@@ -34,6 +34,9 @@ export default function Coafior() {
                         Welcome to our beauty salon where you can get an expert opinion and a solution
                         to your desires related to your beautiful hair and vision! Welcome!
                     </h3>
+                </p>
+                <p id="pCoaf">
+                    <li id="createCoafiorPost" ><Link to="/coafior/create">Write post on Coafior</Link></li>
                 </p>
 
             </section>

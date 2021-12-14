@@ -9,7 +9,7 @@ import logo from '../../../src/logo.jpg';
 
 function Header() {
 
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     let userNavigation = (
         <div id="user">
             <li>Welcome, {user.email}!</li>

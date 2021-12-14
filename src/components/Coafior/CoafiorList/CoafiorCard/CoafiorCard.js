@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom"
+import './CoafiorCard.css'
 
 const CoafiorCard = ({
-    clientsCoafior
+    clientCoafior
 })=>{
 
     return(
 
         <li>
-            <h2>{clientsCoafior.name}</h2>
-            <p>{clientsCoafior.description}</p>
+            <h2>{clientCoafior.name}</h2>
+            <p>{clientCoafior.description}</p>
             <p>
-                <img src={clientsCoafior.imageUrl} />
+                <img src={clientCoafior.imageUrl} />
             </p>
-            <Link className="button" to={`coafior/details/${clientsCoafior._id}`}>DETAILS</Link>
+            <Link className="button button-details" to={`coafior/details/${clientCoafior._id}`}>DETAILS</Link>
         </li>
     )
 

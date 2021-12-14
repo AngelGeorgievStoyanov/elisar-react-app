@@ -11,7 +11,7 @@ const CoafiorList = ({
                 {clientsCoafior.length > 0
                     ? (
                         <ul>
-                            {clientsCoafior.map(x => <CoafiorCard key={x._id} client={x} />)}
+                            {clientsCoafior.map(x => <CoafiorCard key={x._id} clientCoafior={x} />)}
                         </ul>
                     )
                     : <p>Welcome!</p>

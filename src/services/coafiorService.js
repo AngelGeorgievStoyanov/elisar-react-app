@@ -14,7 +14,7 @@ export const getMyPosts = (ownerId) => {
 }
 
 
-export const create = async (coafiorData, token) => {
+export const createCoafior = async (coafiorData, token) => {
     let response = await fetch(`${baseUrl}/coafior`, {
         method: 'POST',
         headers: {
