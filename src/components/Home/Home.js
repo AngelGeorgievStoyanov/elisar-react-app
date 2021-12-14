@@ -12,9 +12,7 @@ export default function Home() {
             <SectionOne />
             <SectionTwo />
             <SectionThree/>
-            <section></section>
-            <section></section>
-            <section></section>
+           
         </>
 
 

@@ -11,7 +11,6 @@ export const login = async (email, password) => {
     });
 
     let jsonResult = await res.json();
-
     if (res.ok) {
         return jsonResult;
     } else {
@@ -19,7 +18,7 @@ export const login = async (email, password) => {
     }
 };
 
-export const register = (email, password)=>{
+export const register = (email, password) => {
     return fetch(`${baseUrl}/register`, {
         method: 'POST',
         headers: {
@@ -41,5 +40,11 @@ export const logout = (token) => {
 
 export const getUser = () => {
     let username = localStorage.getItem('username')
+    console.log(username)
     return username
+}
+
+
+export const isAuthenticated =()=>{
+    return Boolean(getUser())
 }
