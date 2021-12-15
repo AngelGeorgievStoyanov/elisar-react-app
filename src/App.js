@@ -11,7 +11,7 @@ import Logout from './components/Logout/Logout';
 import Coafior from './components/Coafior/Coafior';
 import ErrorBoundary from './components/Common/ErrorBoudary';
 import CreateCoafior from './components/CreateCoafior/CreateCoafior';
-
+import DetailsCoafior from './components/DetailsCoafior/DetailsCoafior';
 
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
               <Route path="/logout" element={<Logout />} />
               <Route path="/coafior" element={<Coafior />} />
               <Route path="/coafior/create" exact element={<CreateCoafior />} />
+              <Route path="/coafior/coafior/details/:clientCoafiorId" exact element={<DetailsCoafior />} />
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </main>
