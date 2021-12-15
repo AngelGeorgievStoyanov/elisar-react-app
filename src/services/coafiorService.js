@@ -30,7 +30,7 @@ export const createCoafior = async (coafiorData, token) => {
 };
 
 export const updateCoafior = (coafiorId, coafiorData) => {
-    request.put(`${baseUrl}/coafior${coafiorId}`, coafiorData)
+    request.put(`${baseUrl}/coafior/${coafiorId}`, coafiorData)
 };
 
 

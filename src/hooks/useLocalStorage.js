@@ -20,9 +20,9 @@ const useLocalStorage = (key, initialValue) => {
 
         try {
             localStorage.setItem(key, JSON.stringify(value))
-            setState(value)
+            setState(value);
         } catch (err) {
-            console.log(err)
+            console.log(err);
 
         }
     }

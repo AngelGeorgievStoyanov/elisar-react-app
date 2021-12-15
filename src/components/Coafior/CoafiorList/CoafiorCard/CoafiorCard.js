@@ -13,7 +13,7 @@ const CoafiorCard = ({
             <p>
                 <img src={clientCoafior.imageUrl} />
             </p>
-            <Link className="button button-details" to={`coafior/details/${clientCoafior._id}`}>DETAILS</Link>
+            <Link className="button button-details" to={`/coafior/details/${clientCoafior._id}`}>DETAILS</Link>
         </li>
     )
 

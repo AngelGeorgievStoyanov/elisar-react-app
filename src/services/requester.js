@@ -22,32 +22,27 @@ export const request = async (method, url, data) => {
 }
 
 async function responseHandler(res) {
-
     let jsonData = await res.json();
 
     if (res.ok) {
-
-        return Object.values(jsonData)
-
+        return Object.values(jsonData);
     } else {
-
         throw jsonData;
     }
-}
+};
 
 function getToken() {
     try {
         let userItem = localStorage.getItem('user');
 
-        if (userItem) {
-            throw { message: 'You must be authenticated!' };
+        if (!userItem) {
+            throw {message: 'You must be authenticated'};
         }
 
         let user = JSON.parse(userItem);
 
         return user.accessToken;
-
-    } catch (err) {
+    } catch(err) {
         console.log(err);
     }
 }
