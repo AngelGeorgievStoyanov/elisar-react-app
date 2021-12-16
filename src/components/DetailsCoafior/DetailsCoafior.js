@@ -4,6 +4,8 @@ import { useAuthContext } from "../contexts/AuthContex";
 
 import useCoafiorState from "../../hooks/useClientCoafiorState";
 
+import * as coafiorService from '../../services/coafiorService';
+
 import './DetailsCoafior.css'
 const DetailsCoafior = () => {
 
@@ -13,11 +15,23 @@ const DetailsCoafior = () => {
 
     const [clientCoafior, setClientCoafior] = useCoafiorState(clientCoafiorId)
 
+    
+
+    const deleteClickHandler = (e)=>{
+        e.preventDefault();
+        console.log(process.env.NODE_ENV);
+        coafiorService.destroyCoafior(clientCoafiorId, user.accessToken)
+        .then(()=>{
+            console.log('delete---->')
+            navigate('/coafior')
+        })
+    }
+
     const ownerButtons = (
         <>
            
                 <Link className="button" to={`/coafior/edit/${clientCoafior._id}`}>Edit</Link>
-                <a className="button">Delete</a>
+                <a className="button" onClick={deleteClickHandler} >Delete</a>
            
         </>
     )
@@ -38,7 +52,7 @@ const DetailsCoafior = () => {
                 <h3>Name: {clientCoafior.name}</h3>
                 <p><img src={clientCoafior.imageUrl} /></p>
                 <p>Post: {clientCoafior.description}</p>
-                <div>
+                <div className="detail-buttons">
                     {user._id && (user._id == clientCoafior._ownerId
                         ? ownerButtons
                         : userButton
