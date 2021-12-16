@@ -13,7 +13,7 @@ import ErrorBoundary from './components/Common/ErrorBoudary';
 import CreateCoafior from './components/CreateCoafior/CreateCoafior';
 import DetailsCoafior from './components/DetailsCoafior/DetailsCoafior';
 import EditCoafior from './components/EditCoafior/EditCoafior';
-
+import Contacts from './components/Contacts/Contacts';
 
 function App() {
 
@@ -36,6 +36,7 @@ function App() {
               <Route path="/coafior/create" exact element={<CreateCoafior />} />
               <Route path="/coafior/details/:clientCoafiorId" exact element={<DetailsCoafior />} />
               <Route path="/coafior/edit/:clientCoafiorId" exact element={<EditCoafior />} />
+              <Route path="/contacts" element={<Contacts />} />
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </main>

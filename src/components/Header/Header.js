@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthContex';
+
+import { useAuthContext } from '../contexts/AuthContex';
 
 import './Header.css';
 
@@ -9,7 +9,7 @@ import logo from '../../../src/logo.jpg';
 
 function Header() {
 
-    const { user } = useContext(AuthContext)
+    const { user } = useAuthContext();
     let userNavigation = (
         <div id="user">
             <li>Welcome, {user.email}!</li>
