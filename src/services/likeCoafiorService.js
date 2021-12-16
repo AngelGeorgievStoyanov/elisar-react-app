@@ -8,7 +8,7 @@ export const like = (userId, clientId)=>request.post(`${baseUrl}/likes`, {userId
 export const getClientLikes = ( clientId)=>{
 
     const query = encodeURIComponent(`clientId="${clientId}"`);
-
-    return request.get(`${baseUrl}/likes?select=clientId&where=${query}`)
+    console.log(query)
+    return request.get(`${baseUrl}/likes?select=userId&where=${query}`)
     .then(res=>res.map(x=>x.userId))
 }

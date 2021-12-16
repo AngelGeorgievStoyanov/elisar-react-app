@@ -1,7 +1,22 @@
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+
+
+
 
 .detail-buttons>a{
     background-color: black;  
     padding: 20px 20px;
     margin: 10px 10px;
     border-radius: 8px;
+}
+
+.likeBtn, .span-likes{
+    margin: 5px 5px;
+    padding: 10px 10px;
 }

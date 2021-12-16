@@ -18,40 +18,59 @@ const DetailsCoafior = () => {
 
     const [clientCoafior, setClientCoafior] = useCoafiorState(clientCoafiorId)
 
-    useEffect(()=>{
+    useEffect(() => {
         likeService.getClientLikes(clientCoafiorId)
-        .then(likes=>{
-            setClientCoafior(state=>({...state, likes}))
-        })
-    },[])
+            .then(likes => {
 
-    const deleteClickHandler = (e)=>{
+                console.log(likes)
+                setClientCoafior(state => ({ ...state, likes }))
+            })
+    }, [])
+
+    const deleteClickHandler = (e) => {
         e.preventDefault();
         console.log(process.env.NODE_ENV);
         coafiorService.destroyCoafior(clientCoafiorId, user.accessToken)
-        .then(()=>{
-            console.log('delete---->')
-            navigate('/coafior')
-        })
+            .then(() => {
+                console.log('delete---->')
+                navigate('/coafior')
+            })
     }
 
     const ownerButtons = (
         <>
-           
-                <Link className="button" to={`/coafior/edit/${clientCoafior._id}`}>Edit</Link>
-                <a className="button" onClick={deleteClickHandler} >Delete</a>
-           
+
+            <Link className="button" to={`/coafior/edit/${clientCoafior._id}`}>Edit</Link>
+            <a className="button" onClick={deleteClickHandler} >Delete</a>
+
         </>
     )
+
+
+
+    const likeButtonClick = () => {
+        if (user._id == clientCoafior._ownerId) {
+            return;
+        }
+        if (clientCoafior.likes.includes(user._id)) {
+            console.log('You connot like again.')
+        }
+
+
+        likeService.like(user._id, clientCoafiorId)
+            .then(() => {
+                setClientCoafior(state => ({ ...state, likes: [...state.likes, user._id] }));
+
+                console.log('Successfuly liked')
+            })
+    }
+
 
     const userButton = (
         <>
-        <h1>No buttons</h1>
+            <button className="likebtn" onClick={likeButtonClick} disabled={clientCoafior.likes?.includes(user._id)}  >Like</button>
         </>
     )
-
-
-
 
     return (
         <section>
@@ -60,13 +79,15 @@ const DetailsCoafior = () => {
                 <h3>Name: {clientCoafior.name}</h3>
                 <p><img src={clientCoafior.imageUrl} /></p>
                 <p>Post: {clientCoafior.description}</p>
-                <div className="detail-buttons">
-                    {user._id && (user._id == clientCoafior._ownerId
-                        ? ownerButtons
-                        : userButton
-                    )}
+                <div className="action-buttons">
+                    <div className="detail-buttons">
+                        {user._id && (user._id == clientCoafior._ownerId
+                            ? ownerButtons
+                            : userButton
+                        )}
+                    </div>
+                    <span className="span-likes" >Likes: {clientCoafior.likes?.length || 0}</span>
                 </div>
-                <span >Likes: {clientCoafiorId.likes?.length || 0}</span>
             </form>
 
         </section>
