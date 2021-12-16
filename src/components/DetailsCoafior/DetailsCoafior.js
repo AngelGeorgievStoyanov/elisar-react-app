@@ -6,7 +6,10 @@ import useCoafiorState from "../../hooks/useClientCoafiorState";
 
 import * as coafiorService from '../../services/coafiorService';
 
+import * as likeService from '../../services/likeCoafiorService';
+
 import './DetailsCoafior.css'
+import { useEffect } from "react";
 const DetailsCoafior = () => {
 
     const navigate = useNavigate();
@@ -15,7 +18,12 @@ const DetailsCoafior = () => {
 
     const [clientCoafior, setClientCoafior] = useCoafiorState(clientCoafiorId)
 
-    
+    useEffect(()=>{
+        likeService.getClientLikes(clientCoafiorId)
+        .then(likes=>{
+            setClientCoafior(state=>({...state, likes}))
+        })
+    },[])
 
     const deleteClickHandler = (e)=>{
         e.preventDefault();
@@ -58,6 +66,7 @@ const DetailsCoafior = () => {
                         : userButton
                     )}
                 </div>
+                <span >Likes: {clientCoafiorId.likes?.length || 0}</span>
             </form>
 
         </section>
