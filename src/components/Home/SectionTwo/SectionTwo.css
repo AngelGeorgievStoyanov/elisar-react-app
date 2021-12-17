@@ -23,6 +23,7 @@
 }
 article.coafior > a > p > h1{
     color: black;
+    text-shadow: 2px -3px 2px white;
     position: absolute;
     top: 16px;
     left: 68px;
@@ -40,9 +41,16 @@ article.coafior > a > p > h1{
 }
 
 
-article.nails > a > p > h1{
+
+
+
+.name-manicurist{
     color: black;
+    text-shadow: 2px -3px 2px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 407px;
-    left: 283px;
+    top: 360px;
+    left: 322px;
 }

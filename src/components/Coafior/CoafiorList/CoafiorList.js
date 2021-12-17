@@ -1,4 +1,7 @@
 import CoafiorCard from "./CoafiorCard/CoafiorCard"
+import './CoafiorList.js';
+
+
 
 const CoafiorList = ({
     clientsCoafior
@@ -10,7 +13,7 @@ const CoafiorList = ({
             <section>
                 {clientsCoafior.length > 0
                     ? (
-                        <ul>
+                        <ul className="ul-card-list">
                             {clientsCoafior.map(x => <CoafiorCard key={x._id} clientCoafior={x} />)}
                         </ul>
                     )

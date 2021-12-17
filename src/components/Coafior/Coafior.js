@@ -25,7 +25,7 @@ export default function Coafior() {
     }, []);
 
     return (
-        <>
+        <article className="coafior-article">
             <section id="coafiorSection">
 
                 <h1 >Coafior Page</h1>
@@ -48,7 +48,7 @@ export default function Coafior() {
             <section>
                 <CoafiorList clientsCoafior={clientsCoafior} />
             </section>
-        </>
+        </article>
     )
 
 }

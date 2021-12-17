@@ -1,7 +1,6 @@
 import './Home.css';
 import SectionOne from './SectionOne/SectionOne';
 import SectionTwo from './SectionTwo/SectionTwo';
-import SectionThree from './SectionThree/SectionThree';
 
 export default function Home() {
 
@@ -11,7 +10,7 @@ export default function Home() {
         <>
             <SectionOne />
             <SectionTwo />
-            <SectionThree/>
+           
            
         </>
 

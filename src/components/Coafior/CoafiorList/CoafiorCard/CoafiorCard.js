@@ -7,11 +7,11 @@ const CoafiorCard = ({
 
     return(
 
-        <li>
+        <li className="coafior-card" >
             <h2>{clientCoafior.name}</h2>
             <p>{clientCoafior.description}</p>
             <p>
-                <img src={clientCoafior.imageUrl} />
+                <img className="image-coafior-card" src={clientCoafior.imageUrl} />
             </p>
             <Link className="button button-details" to={`/coafior/details/${clientCoafior._id}`}>DETAILS</Link>
         </li>

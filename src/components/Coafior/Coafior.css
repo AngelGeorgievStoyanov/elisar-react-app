@@ -1,4 +1,11 @@
+.coafior-article{
+    background-image: url('https://thumbs.dreamstime.com/z/various-hair-dresser-tools-wooden-background-copy-space-123969993.jpg');
+    background-repeat: no-repeat;
+    
+}
+
 #coafiorSection{
+   
     margin: 100px 100px;
     max-width: 80%;
     align-items: center;

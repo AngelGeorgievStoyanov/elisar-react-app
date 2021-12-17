@@ -39,7 +39,7 @@ export default function Register() {
                     </form>
                     <small className="text-muted "><Link to="/login">Already Have An Account?</Link></small>
                 </div>
-                <div className="right-box">
+                <div className="register-right-box">
                 </div>
             </div>
         </section>

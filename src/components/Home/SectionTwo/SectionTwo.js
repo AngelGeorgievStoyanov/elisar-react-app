@@ -17,7 +17,10 @@ function SectionTwo() {
             <article className="nails">
                 <Link to='/nails'>
                     <img src={nails} id="nails" alt="nails" />
-                <p><h1>TOP NAILS ANTHONINA</h1></p>
+                    <p className="name-manicurist">
+                        <h1>TOP MANICURIST</h1>
+                        <h1> ANTHONINA</h1>
+                    </p>
                 </Link>
             </article>
         </section>

@@ -1,6 +1,6 @@
 
 .sectionOne {
-    background-image: url('https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8452.jpg&t=gRG57Lh7iQ8B1Io&scalingup=0');
+   background-image: url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/3220748fc8cd5209b92f6f4e/pexelsphoto458530.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; 
@@ -8,3 +8,25 @@
     background-position: center; 
   
   }
+
+.article-section-one{
+  color: white;
+  position: absolute;
+ margin: 45px 20px;
+ padding: 20px 20px;
+}
+
+.article-section-one{
+  font-family: 'Courgette', cursive;
+  font-family: 'Vujahday Script', cursive;
+  font-weight: bold;
+}
+
+.p-section-one{
+  font-size: 60px;
+  margin: 0;
+}
+
+.h1-section-one{
+  font-size: 33px;
+}

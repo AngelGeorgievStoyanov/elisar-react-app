@@ -1,7 +1,25 @@
 main> div#notfound{
-   
+   margin: 53px auto;
+   max-width: 65%;
    display: flex;
-   margin: 50% 50%;
+   flex-direction: column;
+   align-items: center;
   
         
+}
+
+.logo-not-found{
+   width: 330px;
+   height: 150px;
+}
+.hair-dryer{
+   width: 176px;
+    height: 253px;
+}
+
+.btn-not-found{
+   color: black;
+   border: solid black 2px;
+   border-radius: 8px;
+   padding: 5px 5px;
 }

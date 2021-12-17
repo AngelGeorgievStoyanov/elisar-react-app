@@ -1,7 +1,6 @@
 
 
 
-
 #login-box
 {
     display: flex;
@@ -70,7 +69,7 @@ input[type="submit"]:focus
   transform: scale(1.04);
 }
 
-.right-box
+.login-right-box
 {
     position: absolute;
     top: 0;
@@ -79,7 +78,7 @@ input[type="submit"]:focus
     padding: 40px;
     width: 315px;
     height: 430px;
-    background-image: url(https://www.fotomara.com/wp-content/uploads/2019/01/fotograf-fotomara.jpg);
+    background-image: url('https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8452.jpg&t=gRG57Lh7iQ8B1Io&scalingup=0');
     background-size: cover;
     background-position: center;
 }

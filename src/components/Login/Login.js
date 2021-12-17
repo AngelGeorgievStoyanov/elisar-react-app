@@ -39,7 +39,7 @@ const {login}=useContext(AuthContext);
           </form>
           <small className="text-muted "><Link to="/register">Don't Have An Account? Sign up!</Link></small>
         </div>
-        <div className="right-box">
+        <div className="login-right-box">
         </div>
       </div>
     </section>
