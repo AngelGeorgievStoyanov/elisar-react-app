@@ -14,6 +14,8 @@ import CreateCoafior from './components/CreateCoafior/CreateCoafior';
 import DetailsCoafior from './components/DetailsCoafior/DetailsCoafior';
 import EditCoafior from './components/EditCoafior/EditCoafior';
 import Contacts from './components/Contacts/Contacts';
+import MyPosts from './components/MyPosts/MyPosts';
+
 
 function App() {
 
@@ -37,6 +39,7 @@ function App() {
               <Route path="/coafior/details/:clientCoafiorId" exact element={<DetailsCoafior />} />
               <Route path="/coafior/edit/:clientCoafiorId" exact element={<EditCoafior />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/my-posts" element={<MyPosts/>}/>
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </main>

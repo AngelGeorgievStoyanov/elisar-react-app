@@ -14,6 +14,7 @@ function Header() {
         <div id="user">
             <li>Welcome, {user.email}!</li>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/my-posts">My Posts</Link></li>
             <li><Link to="/contacts">Contacts</Link></li>
             <li><Link to="/logout">Logout</Link></li>
         </div>
