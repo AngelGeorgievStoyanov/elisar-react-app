@@ -73,12 +73,12 @@ const DetailsCoafior = () => {
     )
 
     return (
-        <section>
+        <section className="section-details">
             <form id="details-form-coafior-post"   >
-                <h1>Details Page</h1>
-                <h3>Name: {clientCoafior.name}</h3>
-                <p><img src={clientCoafior.imageUrl} /></p>
-                <p>Post: {clientCoafior.description}</p>
+                <h1 className="details-text">Details Page</h1>
+                <h3 className="details-text">Name: {clientCoafior.name}</h3>
+                <p><img className="image-coafior-card" src={clientCoafior.imageUrl} /></p>
+                <p className="details-text">Post: {clientCoafior.description}</p>
                 <div className="action-buttons">
                     <div className="detail-buttons">
                         {user._id && (user._id == clientCoafior._ownerId

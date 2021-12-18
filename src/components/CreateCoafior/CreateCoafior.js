@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import * as coafiorService from '../../services/coafiorService';
 
-
+import './CreateCoafior.css'
 const CreateCoafior = () => {
 
     const { user } = useAuthContext();
@@ -33,20 +33,20 @@ const CreateCoafior = () => {
 
 
     return (
-        <section>
+        <section className="create-section">
             <form id="create-form-coafior-post" onSubmit={onCoafiorCreate} method="POST" >
                 <h2>Create post on Coafior Page</h2>
                 <label htmlFor="name">Name</label>
                 <span>
-                    <input type="text" name="name" placeholder="Place enter your name" />
+                    <input type="text" name="name" placeholder="Place enter your name" size="42" />
                 </span>
                 <label htmlFor="description" >Post</label>
                 <span>
-                    <textarea name="description" placeholder="Place write your post" />
+                    <textarea name="description" placeholder="Place write your post" rows="7" cols="40" />
                 </span>
                 <label htmlFor="image" >Image</label>
                 <span>
-                    <input type="text" name="imageUrl" placeholder="Image" />
+                    <input type="text" name="imageUrl" placeholder="Image" size="42" />
                 </span>
                 <input type="submit" value="Add post" />
             </form>

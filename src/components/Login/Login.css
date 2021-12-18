@@ -1,4 +1,11 @@
+.login-form{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8912.jpg&t=oK1HZvdLwY9HJi8&scalingup=0') ; 
+   background-repeat: no-repeat;
+    background-size: cover;
 
+}
 
 
 #login-box

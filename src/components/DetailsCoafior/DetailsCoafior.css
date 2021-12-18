@@ -1,3 +1,28 @@
+.section-details{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://cdn.shopify.com/s/files/1/1008/8768/products/shinehome-hairdressertools-mural_1024x1024.jpg?v=1614757489');
+}
+
+#details-form-coafior-post{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://cdn.shopify.com/s/files/1/1008/8768/products/shinehome-hairdressertools-mural_1024x1024.jpg?v=1614757489');
+    height: 630px;
+    width: 630px;
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    transform: translate(75%, 25%);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-coafior-card{
+    width: 248px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 .action-buttons{
     display: flex;
     flex-direction: column;
@@ -16,7 +41,29 @@
     border-radius: 8px;
 }
 
-.likeBtn, .span-likes{
-    margin: 5px 5px;
+ .span-likes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    margin: 25px 9px;
     padding: 10px 10px;
+    background: black;
+    color: white;
+}
+
+.likebtn{
+    margin: 0px 10px;
+    padding: 8px 21px;
+    border-radius: 8px;
+}
+
+
+.details-text{
+    background: black;
+    color: white;
+    margin: 5px 0px;
+    padding: 5px 12px;
+    border-radius: 8px;
 }

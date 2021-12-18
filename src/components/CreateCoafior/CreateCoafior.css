@@ -1,0 +1,19 @@
+.create-section{
+    background-image: url('https://previews.123rf.com/images/9dreamstudio/9dreamstudio1708/9dreamstudio170802449/84057761-peines-y-herramientas-de-peluquer%C3%ADa-en-sal%C3%B3n-de-belleza-en-el-fondo-blanco-vista-superior-copyspace.jpg?fj=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#create-form-coafior-post{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 630px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    transform: translate(75%, 25%);
+    justify-content: space-evenly;
+    align-items: center;
+}

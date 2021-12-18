@@ -1,14 +1,26 @@
 .coafior-article{
+    width: 100vw;
+    height: 100%;
     background-image: url('https://thumbs.dreamstime.com/z/various-hair-dresser-tools-wooden-background-copy-space-123969993.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
-
+.coafior-info{
+    font-size: 45px;
+    text-shadow: 6px 3px 12px black;
+    text-align: center;
+}
 #coafiorSection{
    
     margin: 100px 100px;
     max-width: 80%;
     align-items: center;
+    font-family: 'Courgette', cursive;
+    font-family: 'Vujahday Script', cursive;
+    font-weight: bold;
+    color: white;
+    
 }
 
 #pCoaf{
@@ -29,4 +41,8 @@
     border:solid 1px black;
     border-radius: 8px;
     color: black;
+}
+.section-coafior-all{
+    display: flex;
+    flex-direction: column;
 }

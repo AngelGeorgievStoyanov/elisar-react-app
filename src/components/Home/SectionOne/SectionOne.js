@@ -8,7 +8,7 @@ function SectionOne() {
             <article className="article-section-one">
                 <h1 className="h1-section-one">YOUR PERSONAL BEAUTY PROFESSIONALS</h1>
                 <p className="p-section-one">
-                    ELISAR BEAUTY SALON
+                    ELISAR     BEAUTY  STUDIO
                 </p>
             </article>
         </section>

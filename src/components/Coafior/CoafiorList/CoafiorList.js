@@ -1,5 +1,5 @@
 import CoafiorCard from "./CoafiorCard/CoafiorCard"
-import './CoafiorList.js';
+import './CoafiorList.css';
 
 
 

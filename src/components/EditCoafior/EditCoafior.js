@@ -6,7 +6,7 @@ import * as coafiorService from '../../services/coafiorService'
 
 import useCoafiorState from "../../hooks/useClientCoafiorState";
 
-
+import './EditCoafior.css'
 
 
 const EditCoafior = () => {
@@ -28,7 +28,7 @@ const EditCoafior = () => {
     }
 
     return (
-        <section>
+        <section className="section-edit">
             <form id="edit-form-coafior-post" onSubmit={clientCoafiorSubmitHandler} method="POST" >
                 <h2>Edit post on Coafior Page</h2>
                 <label htmlFor="name">Name</label>
