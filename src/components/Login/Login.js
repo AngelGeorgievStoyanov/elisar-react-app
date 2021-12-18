@@ -1,16 +1,18 @@
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
-import './Login.css';
 import * as authService from '../../services/authService';
 import { useContext } from 'react';
-import { AuthContext } from '../contexts/AuthContex';
-
+import { useAuthContext } from '../contexts/AuthContex';
+import { useNotificationContext, types } from '../contexts/NotificationContext';
+import './Login.css';
 
 export default function Login() {
-const {login}=useContext(AuthContext);
+  const { login } = useAuthContext();
 
   const navigate = useNavigate();
-  
+
+  const { addNotification } = useNotificationContext();
+
   const onLoginHandler = (e) => {
 
     e.preventDefault()
@@ -21,8 +23,13 @@ const {login}=useContext(AuthContext);
 
     authService.login(email, password)
       .then((authData) => {
-        login(authData)
+        login(authData);
+        addNotification('You logged in successfully', types.success);
         navigate('/')
+      })
+      .catch(err=>{
+        console.log(err)
+      
       })
   }
   return (
@@ -42,6 +49,7 @@ const {login}=useContext(AuthContext);
         <div className="login-right-box">
         </div>
       </div>
+   
     </section>
   )
 
