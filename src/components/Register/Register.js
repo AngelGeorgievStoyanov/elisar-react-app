@@ -12,9 +12,9 @@ export default function Register() {
 
     const registerSubmitHandler = (e) => {
         e.preventDefault();
-        let { email, password } = Object.fromEntries(new FormData(e.currentTarget))
-
-        authService.register(email, password)
+        let { username, email, password } = Object.fromEntries(new FormData(e.currentTarget))
+        console.log(username, email, password, '---register--')
+        authService.register(username, email, password)
             .then(authData => {
                 login(authData)
 
@@ -30,7 +30,7 @@ export default function Register() {
             <div id="register-box">
                 <div className="left-box">
                     <h1>Register</h1>
-                    <form  method="POST" onSubmit={registerSubmitHandler}>
+                    <form method="POST" onSubmit={registerSubmitHandler}>
                         <input type="text" name="username" className="txtb" placeholder="Username" />
                         <input type="text" name="email" className="txtb" placeholder="Email" />
                         <input type="password" name="password" className="txtb" placeholder="Password" />

@@ -1,6 +1,7 @@
 .coafior-article{
     width: 100vw;
-    height: 100%;
+    height: 180vh;
+    min-width: 80%;
     background-image: url('https://thumbs.dreamstime.com/z/various-hair-dresser-tools-wooden-background-copy-space-123969993.jpg');
     background-repeat: no-repeat;
     background-size: cover;

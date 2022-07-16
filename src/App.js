@@ -17,6 +17,7 @@ import DetailsCoafior from './components/DetailsCoafior/DetailsCoafior';
 import EditCoafior from './components/EditCoafior/EditCoafior';
 import Contacts from './components/Contacts/Contacts';
 import MyPosts from './components/MyPosts/MyPosts';
+import Profile from './components/Profile/Profile'
 import GuardedRoute from './components/Common/GuardedRoute';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
                 <Route path="/coafior/details/:clientCoafiorId" exact element={<DetailsCoafior />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/my-posts" element={<MyPosts />} />
+                <Route path="/profile" element ={<Profile/>} />
                 <Route element={<GuardedRoute />}>
                   <Route path="/coafior/create" exact element={<CreateCoafior />} />
                   <Route path="/coafior/edit/:clientCoafiorId" exact element={<EditCoafior />} />

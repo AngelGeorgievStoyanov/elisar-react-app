@@ -18,13 +18,13 @@ export const login = async (email, password) => {
     }
 };
 
-export const register = (email, password) => {
+export const register = (username,email, password) => {
     return fetch(`${baseUrl}/register`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ username,email, password })
     })
         .then(res => res.json());
 };
@@ -45,6 +45,15 @@ export const getUser = () => {
 }
 
 
-export const isAuthenticated =()=>{
+export const isAuthenticated = () => {
     return Boolean(getUser())
+}
+
+export const profile = (token) => {
+    return fetch(`${baseUrl}/me`,
+        {
+            headers: {
+                'X-Authorization': token
+            }
+        })
 }

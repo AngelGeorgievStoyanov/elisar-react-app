@@ -39,12 +39,12 @@ export default function Login() {
         <div className="left-box">
           <h1>Login</h1>
           <form onSubmit={onLoginHandler} method="POST">
-            <input type="text" className="txtb" name="email" placeholder="Email" />
+            <input type="text" className="txtb" name="email" placeholder="Email"  />
             <input type="password" className="txtb" name="password" placeholder="Password" />
             <p></p>
             <input type="submit" value="Sign Up" name="signup-button" className="signup-btn" />
           </form>
-          <small className="text-muted "><Link to="/register">Don't Have An Account? Sign up!</Link></small>
+          <small className="text-muted"><Link to="/register">Don't Have An Account? Sign up!</Link></small>
         </div>
         <div className="login-right-box">
         </div>

@@ -12,7 +12,7 @@ function Header() {
     const { user } = useAuthContext();
     let userNavigation = (
         <div id="user">
-            <li>Welcome, {user.email}!</li>
+            <li><Link to="/profile">Welcome, {user.username}!</Link></li>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/my-posts">My Posts</Link></li>
             <li><Link to="/contacts">Contacts</Link></li>

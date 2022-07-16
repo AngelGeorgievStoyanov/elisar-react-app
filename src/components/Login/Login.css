@@ -1,15 +1,15 @@
-.login-form{
+.login-form {
     width: 100vw;
     height: 100vh;
-    background-image: url('https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8912.jpg&t=oK1HZvdLwY9HJi8&scalingup=0') ; 
-   background-repeat: no-repeat;
+    background-image: url('https://disk.bg/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=505&a=true&file=IMG_8912.jpg&t=oK1HZvdLwY9HJi8&scalingup=0');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
 
-#login-box
-{
+#login-box {
     display: flex;
     flex-direction: column;
     height: 430px;
@@ -19,8 +19,7 @@
     transform: translate(75%, 25%);
 }
 
-.left-box
-{
+.left-box {
     position: absolute;
     top: 0;
     right: 0;
@@ -30,15 +29,13 @@
     height: 430px;
 }
 
-h1
-{
+h1 {
     margin: -10px 0 20px 0;
     font-weight: 300;
     font-size: 28px;
 }
 
-input.txtb
-{
+input.txtb {
     display: block;
     box-sizing: border-box;
     margin-bottom: 26px;
@@ -54,30 +51,27 @@ input.txtb
     transition: 0.2s ease;
 }
 
-input[type="submit"]
-{
-  height: 32px;
-  width: 47%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  background: transparent;
-  border-radius: 44px;
-  cursor: pointer;
-  transition: 0.6s;
-  border-style: none;
-  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
-  color: white;
+input[type="submit"] {
+    height: 32px;
+    width: 47%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.6s;
+    border-style: none;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    color: white;
 }
 
 
 input[type="submit"]:hover,
-input[type="submit"]:focus
-{
-  transform: scale(1.04);
+input[type="submit"]:focus {
+    transform: scale(1.04);
 }
 
-.login-right-box
-{
+.login-right-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -89,6 +83,3 @@ input[type="submit"]:focus
     background-size: cover;
     background-position: center;
 }
-
-
-

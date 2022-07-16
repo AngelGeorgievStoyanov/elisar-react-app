@@ -29,10 +29,10 @@ export default function Coafior() {
             <section id="coafiorSection">
 
                 <h1 className="coafior-info" >About Snezhana</h1>
-                <p className="coafior-info">                   
-                        Hello, my name is Snezhana Stoyanova and I am a hairdresser with more than 15 years of experience.
-                        Welcome to our beauty salon where you can get an expert opinion and a solution
-                        to your desires related to your beautiful hair and vision! Welcome!                    
+                <p className="coafior-info">
+                    Hello, my name is Snezhana Stoyanova and I am a hairdresser with more than 15 years of experience.
+                    Welcome to our beauty salon where you can get an expert opinion and a solution
+                    to your desires related to your beautiful hair and vision! Welcome!
                 </p>
                 <p id="pCoaf">
                     {user._id
