@@ -16,7 +16,7 @@ export default function NotFound() {
        }, [navigate]);
     return (
         <div id="notfound">
-            <img src={logo} className="logo-not-found" />
+            <img src={logo} className="logo-not-found" alt='IMG' />
             <h1 >Page not found...</h1>
             <img src={img} className="hair-dryer" alt="hair dryer" />
             <h2>This page has been blown away by the heat.</h2>

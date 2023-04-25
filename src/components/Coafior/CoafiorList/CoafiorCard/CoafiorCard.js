@@ -11,7 +11,7 @@ const CoafiorCard = ({
             <h2>{clientCoafior.name}</h2>
             <p>{clientCoafior.description}</p>
             <p>
-                <img className="image-coafior-card" src={clientCoafior.imageUrl} />
+                <img className="image-coafior-card" src={clientCoafior.imageUrl} alt='IMG' />
             </p>
             <Link className="button button-details" to={`/coafior/details/${clientCoafior._id}`}>DETAILS</Link>
         </li>
